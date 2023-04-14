@@ -1,0 +1,282 @@
+_type: export
+__export_format: 4
+__export_date: 2023-04-14T18:23:51.627Z
+__export_source: insomnia.desktop.app:v2023.1.0
+resources:
+  - _id: req_4c1f2a73ceff4a0aba1aa8bb5472326b
+    parentId: fld_17d8eecdce194e7ba0ecfbc12416b65c
+    modified: 1681452208826
+    created: 1681425068532
+    url: "{{url}}/store"
+    name: /store Get all store data
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1681425068533
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_17d8eecdce194e7ba0ecfbc12416b65c
+    parentId: wrk_70f6afc968364096a39ab3bd861e9cdd
+    modified: 1681452202954
+    created: 1681452190731
+    name: Stores
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1681452190731
+    _type: request_group
+  - _id: wrk_70f6afc968364096a39ab3bd861e9cdd
+    parentId: null
+    modified: 1681425068526
+    created: 1681425068526
+    name: New Document
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_218294911825477288478dc1c504857c
+    parentId: fld_17d8eecdce194e7ba0ecfbc12416b65c
+    modified: 1681452210676
+    created: 1681452070953
+    url: "{{url}}/store/<id>"
+    name: /store/<id>
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1681425068483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4dd009ad1f7246ac8addc5c8f877679b
+    parentId: fld_17d8eecdce194e7ba0ecfbc12416b65c
+    modified: 1681452484809
+    created: 1681452126046
+    url: "{{url}}/store"
+    name: /store Create new store
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "My store 2"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1681425068433
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_41f98e53291641caaee628dfd47aece1
+    parentId: fld_17d8eecdce194e7ba0ecfbc12416b65c
+    modified: 1681452214997
+    created: 1681452166806
+    url: "{{url}}/store/<id>"
+    name: /store/<id> Delete store
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1681425068383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6af9b4826e3c494287eb4488d43090ef
+    parentId: fld_8c849fc2bb2e44c1a08a1b8c39db6915
+    modified: 1681452273440
+    created: 1681452245654
+    url: "{{url}}/item"
+    name: /item Get all items
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1681452245654
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8c849fc2bb2e44c1a08a1b8c39db6915
+    parentId: wrk_70f6afc968364096a39ab3bd861e9cdd
+    modified: 1681452242444
+    created: 1681452228916
+    name: Items
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1681452190681
+    _type: request_group
+  - _id: req_abc7a7acc74d484089c788b430b5ceaa
+    parentId: fld_8c849fc2bb2e44c1a08a1b8c39db6915
+    modified: 1681452295439
+    created: 1681452289499
+    url: "{{url}}/item/<id>"
+    name: /item/<id>
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1681438657093.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cb4c1f5c23fb43dba08690e9431309c2
+    parentId: fld_8c849fc2bb2e44c1a08a1b8c39db6915
+    modified: 1681452609930
+    created: 1681452331090
+    url: "{{url}}/item"
+    name: /item Create new item
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Chair",
+        	"price": 15.99,
+        	"store_id": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1681438657043.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c6a47e25a1fb4bcca2b252319a761872
+    parentId: fld_8c849fc2bb2e44c1a08a1b8c39db6915
+    modified: 1681452354146
+    created: 1681452349580
+    url: "{{url}}/item/<id>"
+    name: /item/<id> Delete item
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1681438656993.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ce023186329b4f13838d4825acd2dba3
+    parentId: fld_8c849fc2bb2e44c1a08a1b8c39db6915
+    modified: 1681452675466
+    created: 1681452365207
+    url: "{{url}}/item/<id>"
+    name: /item/<id> Update item
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Chair",
+        	"price": 15.99,
+        	"item_id": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1681431862763.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_a6b88d0d12e001ef3a78c53978e4b63d6a1d168f
+    parentId: wrk_70f6afc968364096a39ab3bd861e9cdd
+    modified: 1681428136329
+    created: 1681425068529
+    name: Base Environment
+    data:
+      url: http://127.0.0.1:5000
+    dataPropertyOrder:
+      "&":
+        - url
+    color: null
+    isPrivate: false
+    metaSortKey: 1681425068529
+    _type: environment
+  - _id: jar_a6b88d0d12e001ef3a78c53978e4b63d6a1d168f
+    parentId: wrk_70f6afc968364096a39ab3bd861e9cdd
+    modified: 1681425068531
+    created: 1681425068531
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_cf70e1bbb4c644f884d8fce6cb82a2f2
+    parentId: wrk_70f6afc968364096a39ab3bd861e9cdd
+    modified: 1681452807805
+    created: 1681425068527
+    fileName: FIRST REST API
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_c07c3883b2e94e839d865b18ebde5310
+    parentId: wrk_70f6afc968364096a39ab3bd861e9cdd
+    modified: 1681425068533
+    created: 1681425068533
+    name: Example Test Suite
+    _type: unit_test_suite
